@@ -48,13 +48,14 @@ public class UserResource {
         return userController.getAllUser();
     }
     
-    /*@POST
+    @POST
+    //@Path("/{content}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public User postUser(@PathParam("user")User content) {
+    public User postUser(User content) {
         UserController userController = new UserController();
         return userController.postUser(content);
-    }*/
+    }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)

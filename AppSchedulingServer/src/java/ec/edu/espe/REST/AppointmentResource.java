@@ -48,13 +48,13 @@ public class AppointmentResource {
         return appointmentController.getAllAppointment();
     }
     
-    /*@POST
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Appointment postAgenda(@PathParam("appointment")Appointment appointment) {
+    public Appointment postAgenda(Appointment appointment) {
         AppointmentController appointmentController = new AppointmentController();
         return appointmentController.postAppointment(appointment);
-    }*/
+    }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)

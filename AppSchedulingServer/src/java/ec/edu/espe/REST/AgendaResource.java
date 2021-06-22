@@ -48,13 +48,13 @@ public class AgendaResource {
         return agendaController.getAllAgenda();
     }
     
-    /*@POST
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Agenda postAgenda(@PathParam("agenda")Agenda agenda) {
+    public Agenda postAgenda(Agenda agenda) {
         AgendaController agendaController = new AgendaController();
         return agendaController.postAgenda(agenda);
-    }*/
+    }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)

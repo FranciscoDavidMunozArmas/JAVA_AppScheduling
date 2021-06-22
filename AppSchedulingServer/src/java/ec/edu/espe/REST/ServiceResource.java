@@ -48,13 +48,13 @@ public class ServiceResource {
         return serviceController.getAllService();
     }
     
-    /*@POST
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Service postService(@PathParam("service")Service service) {
+    public Service postService(Service service) {
         ServiceController serviceController = new ServiceController();
         return serviceController.postService(service);
-    }*/
+    }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)

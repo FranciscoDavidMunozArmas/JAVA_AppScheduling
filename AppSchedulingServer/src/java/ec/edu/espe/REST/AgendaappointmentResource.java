@@ -41,7 +41,7 @@ public class AgendaappointmentResource {
      * @return an instance of java.lang.String
      */
     @GET
-    @Path("/user/{appointmetID}")
+    @Path("/appointment/{appointmetID}")
     @Produces(MediaType.APPLICATION_JSON)
     public Agenda getAgendaByAppointmentID(@PathParam("appointmetID")String appointmetID) {
         AgendaAppointmentController useragenda = new AgendaAppointmentController();
