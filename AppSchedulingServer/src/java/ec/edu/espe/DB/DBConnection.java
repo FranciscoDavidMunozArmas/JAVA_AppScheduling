@@ -20,7 +20,10 @@ public class DBConnection {
     private final String SQL_HOST = "localhost";
     private final String SQL_NAME = "appscheduling";
     private final String SQL_USER = "root";
-    private final String SQL_PASSWORD = "12345";
+    //David
+    //private final String SQL_PASSWORD = "12345";
+    //Bryan
+    private final String SQL_PASSWORD = "bajd1726";
     
     public Connection getDBConnection(){
         Connection conn = null;

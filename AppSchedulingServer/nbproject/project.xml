@@ -8,10 +8,9 @@
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
             <name>AppSchedulingServer</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
-            <explicit-platform explicit-source-supported="true"/>
             <web-module-libraries>
                 <library dirs="200">
-                    <file>${file.reference.mariadb-java-client-2.7.3.jar}</file>
+                    <file>${file.reference.mariadb-java-client-2.7.3.jar-1}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
