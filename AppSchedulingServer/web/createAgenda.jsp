@@ -1,9 +1,9 @@
+<%@page import="com.google.gson.Gson"%>
+<%@page import="ec.edu.espe.REST.AgendaResource"%>
+<%@page import="ec.edu.espe.Controller.AgendaController"%>
+<%@page import="ec.edu.espe.Model.Agenda"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Create Agenda</title>
@@ -29,4 +29,16 @@ and open the template in the editor.
             <input type="submit" id="btnAdd " onclick="add()" value="Save">
         </form>
     </body>
+    <%
+        Agenda agenda =new Agenda();
+        Gson json = new Gson();
+        AgendaResource agendaResource = new AgendaResource();
+        agenda.setAgendaCode(request.getParameter("numberAgenda"));
+        agenda.setUserCode(request.getParameter("numberUserCode"));
+        agenda.setAgendaDate(request.getParameter("datAgenda"));
+        agenda.setAgendaDescription(request.getParameter("description"));
+        json.toJson(agenda);
+        agendaResource.postAgenda(agenda);
+    
+    %>
 </html>
