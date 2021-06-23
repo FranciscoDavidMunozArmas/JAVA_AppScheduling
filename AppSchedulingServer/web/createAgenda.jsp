@@ -14,31 +14,27 @@
     </head>
     <body>
         <h1>App Schedulling</h1>
-        <form action="" target="" method="post" name="formAgenda">
 
-            <h2>Information of the Agenda</h2>
-            <label for="numberCodeAgenda">Codigo Agenda</label>
-            <input type="number" id="numberCodeAgenda" onkeypress="return valideKey(event)" required><br>
-            <label for=" numberUserCode ">Codigo Usuario</label>
-            <input type="number" id="numberUserCode" onkeypress="return valideKey(event)" required><br>
-            <label for="dateAgenda"> Fecha Agenda</label>
-            <input type="datetime-local" id="dateAgenda" required>
-            <label for="description">Descripcion</label>
-            <textarea name="description" for="description" id="txtDirection" maxlength="100 "></textarea>
-            <p></p>
-            <input type="submit" id="btnAdd " onclick="add()" value="Save">
+        <form action="saveAgenda.jsp" method="POST" >
+            <table style="with: 100%">
+                <tr>
+                    <td>Codigo Agenda</td>
+                    <td><input type="number" name="numberCodeAgenda" onkeypress="return validekey(event)"></td>
+                </tr>
+                <tr>
+                    <td>Codigo Usuario</td>
+                    <td><input type="number" name="numberUserCode" onkeypress="return validekey(event)"></td>
+                </tr>
+                <tr>
+                    <td>Fecha Agenda</td>
+                    <td><input type="datetime-local" name="dateAgenda"></td>
+                </tr>
+                <tr>
+                    <td>descripcion</td>
+                    <td><textarea name="breakPoints1" maxlength="100 "></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Save"/>
         </form>
     </body>
-    <%
-        Agenda agenda =new Agenda();
-        Gson json = new Gson();
-        AgendaResource agendaResource = new AgendaResource();
-        agenda.setAgendaCode(request.getParameter("numberAgenda"));
-        agenda.setUserCode(request.getParameter("numberUserCode"));
-        agenda.setAgendaDate(request.getParameter("datAgenda"));
-        agenda.setAgendaDescription(request.getParameter("description"));
-        json.toJson(agenda);
-        agendaResource.postAgenda(agenda);
-    
-    %>
 </html>
