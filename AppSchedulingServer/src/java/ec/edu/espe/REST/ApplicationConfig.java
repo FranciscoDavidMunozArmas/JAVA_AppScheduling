@@ -32,8 +32,10 @@ public class ApplicationConfig extends Application {
         resources.add(ec.edu.espe.REST.AgendaResource.class);
         resources.add(ec.edu.espe.REST.AgendaappointmentResource.class);
         resources.add(ec.edu.espe.REST.AppointmentResource.class);
+        resources.add(ec.edu.espe.REST.AppointmentserviceResource.class);
         resources.add(ec.edu.espe.REST.EmployeeResource.class);
         resources.add(ec.edu.espe.REST.ServiceResource.class);
+        resources.add(ec.edu.espe.REST.ServiceemployeeResource.class);
         resources.add(ec.edu.espe.REST.UserResource.class);
         resources.add(ec.edu.espe.REST.UseragendaResource.class);
     }

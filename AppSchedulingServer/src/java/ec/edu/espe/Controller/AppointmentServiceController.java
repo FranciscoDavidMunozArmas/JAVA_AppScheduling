@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,7 +6,7 @@
 package ec.edu.espe.Controller;
 
 import ec.edu.espe.DB.DBConnection;
-import ec.edu.espe.Model.ServiceEmployee;
+import ec.edu.espe.Model.AppointmentService;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,75 +18,56 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author panch
+ * @author bryan
  */
-public class ServiceEmployeeController {
-    public List<ServiceEmployee> getAllServiceEmployee () {
+public class AppointmentServiceController {
+    public List<AppointmentService> getAllAppointmentService () {
         Connection conn = null;
         Statement statement = null;
-        List<ServiceEmployee> serviceEmployeeList = new ArrayList<>();
+        List<AppointmentService> appointmentServiceList = new ArrayList<>();
         
         DBConnection dbConnection = new DBConnection();
         try{
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "select * from serviceemployee";
+            String sql = "select * from appointmentservice";
             ResultSet res = statement.executeQuery(sql);
             
             while((res != null) && (res.next())){
-                serviceEmployeeList.add(new ServiceEmployee(res.getString("SERVICECODE"),res.getString("EMPLOYEECODE")));
+                appointmentServiceList.add(new AppointmentService(res.getString("APPOINTMENTCODE"),res.getString("SERVICECODE")));
             }
             
         }catch(SQLException ex){
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return serviceEmployeeList;
+        return appointmentServiceList;
     }
     
-    public ServiceEmployee getServiceEmployeeByID (String serviceCode) {
+    public AppointmentService getAppointmentServiceByID (String appointmentCode) {
         Connection conn = null;
         Statement statement = null;
-        ServiceEmployee serviceEmployee = null;
+        AppointmentService appointmentService = null;
         
         DBConnection dbConnection = new DBConnection();
         try{
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "select * from serviceemployee where servicecode = '" + serviceCode + "'";
+            String sql = "select * from appointmentservice where appointmentcode = '" + appointmentCode + "'";
             ResultSet res = statement.executeQuery(sql);
             
-            serviceEmployee = new ServiceEmployee(res.getString("SERVICECODE"),res.getString("EMPLOYEECODE"));
+            appointmentService = new AppointmentService(res.getString("APPOINTMENTCODE"),res.getString("SERVICECODE"));
             
         }catch(SQLException ex){
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return serviceEmployee;
+        return appointmentService;
     }
     
-    public ServiceEmployee postServiceEmployee (ServiceEmployee serviceEmployee) {
-        Connection conn = null;
-        Statement statement = null;
-        
-        DBConnection dbConnection = new DBConnection();
-        try{
-            conn = dbConnection.getDBConnection();
-            statement = conn.createStatement();
-            
-            String sql = "insert into serviceemployee values('" + serviceEmployee.getServiceCode() + "','" + serviceEmployee.getEmployeeCode() + "')";
-            ResultSet res = statement.executeQuery(sql);
-            
-        }catch(SQLException ex){
-            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return serviceEmployee;
-    }
-    
-    public void deleteServiceEmployeeByID (String serviceCode) {
+    public AppointmentService postAppointmentService (AppointmentService appointmentService) {
         Connection conn = null;
         Statement statement = null;
         
@@ -96,15 +76,17 @@ public class ServiceEmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "delete from serviceemployee where servicecode = '" + serviceCode + "'";
+            String sql = "insert into appointmentservice values('" + appointmentService.getAppointmentCode() + "','" + appointmentService.getServiceCode() + "')";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        return appointmentService;
     }
     
-    public void deleteAllServiceEmployee () {
+    public void deleteAppointmentServiceByID (String appointmentCode) {
         Connection conn = null;
         Statement statement = null;
         
@@ -113,11 +95,28 @@ public class ServiceEmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "delete from serviceemployee";
+            String sql = "delete from appointmentservice where appointmentcode = '" + appointmentCode + "'";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    public void deleteAllAppointmentService () {
+        Connection conn = null;
+        Statement statement = null;
+        
+        DBConnection dbConnection = new DBConnection();
+        try{
+            conn = dbConnection.getDBConnection();
+            statement = conn.createStatement();
+            
+            String sql = "delete from appointmentservice";
+            ResultSet res = statement.executeQuery(sql);
+            
+        }catch(SQLException ex){
+            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }    
 }
