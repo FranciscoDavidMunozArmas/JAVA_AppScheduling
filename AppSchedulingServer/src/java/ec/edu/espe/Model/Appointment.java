@@ -67,7 +67,7 @@ public class Appointment {
      * @param appointmentStartHour the appointmentStartHour to set
      */
     public void setAppointmentStartHour(String appointmentStartHour) {
-        this.appointmentStartHour = appointmentStartHour;
+        this.appointmentStartHour = appointmentStartHour + ":00";
     }
 
     /**
@@ -81,7 +81,7 @@ public class Appointment {
      * @param appointmentEndHour the appointmentEndHour to set
      */
     public void setAppointmentEndHour(String appointmentEndHour) {
-        this.appointmentEndHour = appointmentEndHour;
+        this.appointmentEndHour = appointmentEndHour + ":00";
     }
 
     /**

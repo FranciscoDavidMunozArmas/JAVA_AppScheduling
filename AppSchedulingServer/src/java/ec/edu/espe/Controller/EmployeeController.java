@@ -32,7 +32,7 @@ public class EmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "select * from employee";
+            String sql = "select * from employees";
             ResultSet res = statement.executeQuery(sql);
             
             while((res != null) && (res.next())){
@@ -56,7 +56,7 @@ public class EmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "select * from employee where employeecode = '" + employeeCode + "'";
+            String sql = "select * from employees where employeecode = '" + employeeCode + "'";
             ResultSet res = statement.executeQuery(sql);
             
             employee = new Employee(res.getString("EMPLOYEECODE"),res.getString("EMPLOYEENAME"));
@@ -78,7 +78,7 @@ public class EmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "insert into employee values('" + employee.getEmployeeCode() + "','" + employee.getEmployeeName() + "')";
+            String sql = "insert into employees values('" + employee.getEmployeeCode() + "','" + employee.getEmployeeName() + "')";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){
@@ -98,7 +98,7 @@ public class EmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "delete from employee where employeecode = '" + employeeCode + "'";
+            String sql = "delete from employees where employeecode = '" + employeeCode + "'";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){
@@ -116,7 +116,7 @@ public class EmployeeController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "delete from employee";
+            String sql = "delete from employees";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){

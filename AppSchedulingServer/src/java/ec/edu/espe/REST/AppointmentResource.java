@@ -51,14 +51,15 @@ public class AppointmentResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Appointment postAgenda(Appointment appointment) {
+    public Appointment postAppointment(Appointment appointment) {
         AppointmentController appointmentController = new AppointmentController();
+        System.out.println(appointment);
         return appointmentController.postAppointment(appointment);
     }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)
-    public String deleteAllAgenda() {
+    public String deleteAllAppointment() {
         AppointmentController appointmentController = new AppointmentController();
         appointmentController.deleteAllAppointment();
         return "Deleted";
@@ -67,7 +68,7 @@ public class AppointmentResource {
     @GET
     @Path("/{appointmentID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Appointment getAgendaByID(@PathParam("appointmentID")String appointmentID) {
+    public Appointment getAppointmentByID(@PathParam("appointmentID")String appointmentID) {
         AppointmentController appointmentController = new AppointmentController();
         return appointmentController.getAppointmentByID(appointmentID);
     }
@@ -75,7 +76,7 @@ public class AppointmentResource {
     @DELETE
     @Path("/{appointmentID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String deleteAgendaByID(@PathParam("appointmentID")String appointmentID) {
+    public String deleteAppointmentByID(@PathParam("appointmentID")String appointmentID) {
         AppointmentController appointmentController = new AppointmentController();
         appointmentController.deleteAppointmentByID(appointmentID);
         return "Deleted all";

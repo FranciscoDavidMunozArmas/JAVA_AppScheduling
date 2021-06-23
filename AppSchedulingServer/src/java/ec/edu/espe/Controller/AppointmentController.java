@@ -76,8 +76,8 @@ public class AppointmentController {
         try{
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
-            
-            String sql = "insert into appointment values('" + appointment.getAppointment() + "','" + appointment.getAgendaCode() + "','" + appointment.getAppointmentStartHour() + "','" + appointment.getAppointmentEndHour() + "','" + appointment.getAppointmentDays() + "')";
+            // HH:MI:SS
+            String sql = "insert into appointment values('" + appointment.getAppointment() + "','" + appointment.getAgendaCode() + "','" + appointment.getAppointmentStartHour()+ "', '" + appointment.getAppointmentEndHour()+ "', '" + appointment.getAppointmentDays()+ "')";
             ResultSet res = statement.executeQuery(sql);
             
         }catch(SQLException ex){
