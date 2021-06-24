@@ -1,19 +1,11 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 22-jun-2021, 17:43:36
-    Author     : Steven
-*/
+
 
 * {
     box-sizing: content-box;
 }
 
 body {
-    background-image: url();
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/20/07/24/color-815552_960_720.png);
     text-align: center;
 }
 
