@@ -17,13 +17,13 @@
         <form action="createAgenda.jsp">
             <input type="submit" value="Crear Agenda">
         </form>
-        <form action="createAgenda.jsp">
+        <form action="viewAgenda.jsp">
             <input type="submit" value="ver Agenda">
         </form>
-        <form action="createAgenda.jsp">
+        <form action="createAppointment.jsp">
             <input type="submit" value="Crear Cita">
         </form>
-        <form action="createAgenda.jsp">
+        <form action="viewAppointment.jsp">
             <input type="submit" value="Ver cita">
         </form>
     </body>
