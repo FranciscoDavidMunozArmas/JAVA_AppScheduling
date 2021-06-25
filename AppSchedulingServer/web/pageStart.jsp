@@ -34,14 +34,12 @@
                         </div>
                         <div class="m-2">
                             <a class='btn btn-primary btn-block' href="createService.jsp">Crear Servicio</a>    
+                        </div>                        
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear Cita</a>
                         </div>
                         <div class="m-2">
                             <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver Agenda</a>
-
-                        </div>
-                        <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear Cita</a>
-
                         </div>
                         <div class="m-2">
                             <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver Cita</a>

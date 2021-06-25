@@ -21,9 +21,9 @@ public class DBConnection {
     private final String SQL_NAME = "appscheduling";
     private final String SQL_USER = "root";
     //David
-    private final String SQL_PASSWORD = "12345";
+    //private final String SQL_PASSWORD = "12345";
     //Bryan
-    //private final String SQL_PASSWORD = "bajd1726";
+    private final String SQL_PASSWORD = "bajd1726";
     //Steven
     //private final String SQL_PASSWORD = "steven03";
     
