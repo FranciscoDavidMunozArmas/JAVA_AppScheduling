@@ -27,11 +27,15 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
+                            <a class='btn btn-primary btn-block' href="pageStart.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="float-right-bottom">
+            <a href="createLogin.jsp" class="btn btn-primary btn-float" data-toggle="tooltip" data-placement="top" title="Log out"><span class="fa fa-power-off"></span></a>
         </div>
         
         <%

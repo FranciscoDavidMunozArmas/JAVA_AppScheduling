@@ -45,6 +45,10 @@
                                 <label for="timeEndHour">Hora de finalización</label>
                                 <input class="form-control" type="time" name="timeEndHour" >
                             </div>
+                            <div class="form-group">
+                                <label for="appointmentDays">Dias Cita</label>
+                                <input class="form-control" placeholder="Dias Cita" type="text" name="appointmentDays">
+                            </div>
                             <input class="btn btn-primary btn-block" type="submit" value="Guardar"/>
                         </form>
                     </div>

@@ -27,7 +27,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createEmployee.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
+                            <a class='btn btn-primary btn-block' href="pageStart.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
                         </div>
                     </div>
                 </div>

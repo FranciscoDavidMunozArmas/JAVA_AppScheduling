@@ -28,7 +28,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
+                            <a class='btn btn-primary btn-block' href="pageStart.jsp"><span class="fa fa-chevron-left"></span> Regresar</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
         appointment.setAgendaCode(request.getParameter("numberAgendaCode"));
         appointment.setAppointmentStartHour(request.getParameter("timeStartHour"));
         appointment.setAppointmentEndHour(request.getParameter("timeEndHour"));
-        appointment.setAgendaCode(request.getParameter("txtDayAppointment"));
+        appointment.setAppointmentDays(request.getParameter("appointmentDays"));
         json.toJson(appointment);
         appointmentResource.postAppointment(appointment);
     %>
