@@ -8,26 +8,27 @@
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
             <name>AppSchedulingServer</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
+            <explicit-platform explicit-source-supported="true"/>
             <web-module-libraries>
                 <library dirs="200">
-                    <file>${file.reference.mariadb-java-client-2.7.3.jar-1}</file>
+                    <file>${file.reference.mariadb-java-client-2.7.3.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-<<<<<<< HEAD
+                    <file>${file.reference.mariadb-java-client-2.7.3.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
                     <file>${file.reference.gson-2.8.7.jar}</file>
-=======
-                    <file>${file.reference.gson-2.8.2.jar}</file>
->>>>>>> 0aedfb2c5d127a3bd6140a1b64b630e7b89bdff8
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
-                <root id="src.dir"/>
+                <root id="src.dir" name="Source Packages"/>
             </source-roots>
             <test-roots>
-                <root id="test.src.dir"/>
+                <root id="test.src.dir" name="Test Packages"/>
             </test-roots>
         </data>
     </configuration>

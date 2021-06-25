@@ -1,5 +1,5 @@
 :root{
-    --primary-color: rgb(15, 139, 255);
+    --primary-color: rgb(0, 120, 233);
     --prmary-white: rgb(255,255,255);
     --primary-text-color: rgb(231, 246, 253);
     --simple-margin: 0.5rem;
@@ -38,6 +38,10 @@
     filter: drop-shadow(45%);
 }
 
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
 
 .bg-gradient-primary{
     background: var(--primary-color);
@@ -66,7 +70,9 @@
 .form-group input[type="number"],
 .form-group input[type="email"],
 .form-group input[type="time"],
-.form-group input[type="date"]{
+.form-group input[type="date"],
+.form-group input[type="datetime"],
+.form-group input[type="datetime-local"]{
     border: 1px solid transparent;
     border-radius: 0%;
 }
@@ -76,6 +82,8 @@
 .form-group input[type="email"],
 .form-group input[type="time"],
 .form-group input[type="date"],
+.form-group input[type="datetime"],
+.form-group input[type="datetime-local"],
 .form-group textarea,
 .form-group select{
     transition: all .3s ease;
@@ -116,5 +124,5 @@
 }
 
 .btn-block{
-    width: 100%
+    width: 100%;
 }

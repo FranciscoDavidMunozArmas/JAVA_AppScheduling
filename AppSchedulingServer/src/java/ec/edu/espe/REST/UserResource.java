@@ -59,7 +59,7 @@ public class UserResource {
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)
-    public String deleteAllAgenda() {
+    public String deleteAllUser() {
         UserController userController = new UserController();
         userController.deleteAllUser();
         return "Deleted";
@@ -68,7 +68,7 @@ public class UserResource {
     @GET
     @Path("/{userID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public User getAgendaByID(@PathParam("userID")String userID) {
+    public User getUserByID(@PathParam("userID")String userID) {
         UserController userController = new UserController();
         return userController.getAllUserByID(userID);
     }
@@ -76,7 +76,7 @@ public class UserResource {
     @DELETE
     @Path("/{userID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String deleteAgendaByID(@PathParam("userID")String userID) {
+    public String deleteUserByID(@PathParam("userID")String userID) {
         UserController userController = new UserController();
         userController.deleteUserByID(userID);
         return "Deleted";
@@ -85,7 +85,7 @@ public class UserResource {
     @GET
     @Path("/name/{userName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<User> getAgendaByName(@PathParam("userName")String userName) {
+    public List<User> getUserByName(@PathParam("userName")String userName) {
         UserController userController = new UserController();
         return userController.getAllUserByName(userName);
     }
@@ -93,7 +93,7 @@ public class UserResource {
     @DELETE
     @Path("/name/{userName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String deleteAgendaByName(@PathParam("userName")String userName) {
+    public String deleteUserByName(@PathParam("userName")String userName) {
         UserController userController = new UserController();
         userController.deleteUserByID(userName);
         return "Deleted";

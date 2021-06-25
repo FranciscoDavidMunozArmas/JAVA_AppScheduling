@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/src/java/ec/edu/espe/DB/DBConnection.java</file>
-            <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/src/java/ec/edu/espe/Model/Appointment.java</file>
-            <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/web/saveAgenda.jsp</file>
+            <file>file:/C:/Users/panch/Documents/NetBeansProjects/AppSchedulingServer/src/java/ec/edu/espe/Controller/UserAgendaController.java</file>
+            <file>file:/C:/Users/panch/Documents/NetBeansProjects/AppSchedulingServer/src/java/ec/edu/espe/REST/AgendaappointmentResource.java</file>
+            <file>file:/C:/Users/panch/Documents/NetBeansProjects/AppSchedulingServer/src/java/ec/edu/espe/REST/UseragendaResource.java</file>
         </group>
     </open-files>
 </project-private>
