@@ -9,22 +9,49 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="styleOfPage.css">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
-        <h1>App Scheduling</h1>
-        <form action="createAgenda.jsp">
-            <input type="submit" value="Crear Agenda">
-        </form>
-        <form action="viewAgenda.jsp">
-            <input type="submit" value="ver Agenda">
-        </form>
-        <form action="createAppointment.jsp">
-            <input type="submit" value="Crear Cita">
-        </form>
-        <form action="viewAppointment.jsp">
-            <input type="submit" value="Ver cita">
-        </form>
+        <div class=" wrapper bg-gradient-primary">
+            <div class="d-flex justify-content-center">
+                <h1>App Scheduling</h1>
+            </div>
+            <div class="container d-flex justify-content-center" >
+                <div class="card">
+                    <div class="card-body">
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"> Crear Agenda</a>
+
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver Agenda</a>
+
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear Cita</a>
+
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver Cita</a>
+
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewEmployee.jsp">Ver Empleado</a>
+
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewService.jsp">Ver Servicios</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </body>
 </html>

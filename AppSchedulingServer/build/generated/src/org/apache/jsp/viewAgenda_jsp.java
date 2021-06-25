@@ -52,52 +52,67 @@ public final class viewAgenda_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"styleOfPage.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\r\n");
+      out.write("        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js\" integrity=\"sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF\" crossorigin=\"anonymous\"></script>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://pro.fontawesome.com/releases/v5.10.0/css/all.css\" integrity=\"sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p\" crossorigin=\"anonymous\"/>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"style.css\">\r\n");
       out.write("        <title>JSP Page</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <h1>Datos de la Agenda</h1>\r\n");
-      out.write("\r\n");
-      out.write("        <table width=\"800\" border=\"1\">\r\n");
-      out.write("            <thead>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <th>\r\n");
-      out.write("                        Fecha\r\n");
-      out.write("                    </th>\r\n");
-      out.write("                    <th>\r\n");
-      out.write("                        Descripcion\r\n");
-      out.write("                    </th>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("            </thead>\r\n");
-      out.write("            <tbody>\r\n");
-      out.write("                ");
+      out.write("        <div class=\" wrapper bg-gradient-primary\">\r\n");
+      out.write("            <div class=\"d-flex justify-content-center\">\r\n");
+      out.write("                <h1>Datos Agenda</h1>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            <div class=\"container d-flex justify-content-center\" >\r\n");
+      out.write("                <div class=\"card\">\r\n");
+      out.write("                    <div class=\"card-body\">\r\n");
+      out.write("                        <div class=\"m-2\">\r\n");
+      out.write("                            <a class='btn btn-primary btn-block' href=\"pageStart.jsp\"><span class=\"fa fa-chevron-left\"></span> Regresar</a>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <table class=\"table table-hover\">\r\n");
+      out.write("                            <thead>\r\n");
+      out.write("                                <tr>\r\n");
+      out.write("                                    <th>\r\n");
+      out.write("                                        Fecha\r\n");
+      out.write("                                    </th>\r\n");
+      out.write("                                    <th>\r\n");
+      out.write("                                        Descripcion\r\n");
+      out.write("                                    </th>\r\n");
+      out.write("                                </tr>\r\n");
+      out.write("                            </thead>\r\n");
+      out.write("                            <tbody>\r\n");
+      out.write("                                ");
 
-                    AgendaResource agendaResource = new AgendaResource();
-                    for (Agenda agenda : agendaResource.getAll()) {
+                                    AgendaResource agendaResource = new AgendaResource();
+                                    for (Agenda agenda : agendaResource.getAll()) {
 
-                
+                                
       out.write("\r\n");
       out.write("\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>\r\n");
-      out.write("                        ");
+      out.write("                                <tr>\r\n");
+      out.write("                                    <td>\r\n");
+      out.write("                                        ");
       out.print(agenda.getAgendaDate());
       out.write("\r\n");
-      out.write("                    </td>\r\n");
-      out.write("                    <td>\r\n");
-      out.write("                        ");
+      out.write("                                    </td>\r\n");
+      out.write("                                    <td>\r\n");
+      out.write("                                        ");
       out.print(agenda.getAgendaDescription());
       out.write("\r\n");
-      out.write("                    </td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                ");
+      out.write("                                    </td>\r\n");
+      out.write("                                </tr>\r\n");
+      out.write("                                ");
   }
 
-                
+                                
       out.write("\r\n");
-      out.write("            </tbody>\r\n");
-      out.write("        </table>\r\n");
-      out.write("\r\n");
+      out.write("                            </tbody>\r\n");
+      out.write("                            \r\n");
+      out.write("                        </table>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
