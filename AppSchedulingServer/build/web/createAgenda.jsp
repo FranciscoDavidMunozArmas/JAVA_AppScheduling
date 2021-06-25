@@ -31,7 +31,7 @@
                 </tr>
                 <tr>
                     <td>descripcion</td>
-                    <td><textarea name="breakPoints1" maxlength="100 "></textarea></td>
+                    <td><textarea name="description" maxlength="100 "></textarea></td>
                 </tr>
             </table>
             <input type="submit" value="Save"/>

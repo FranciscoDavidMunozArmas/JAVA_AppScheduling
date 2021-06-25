@@ -13,7 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="styleOfPage.css">
-        <title>Save Agenda</title>
+        <link rel="stylesheet" href="styleOfPage.css">
+        <title>Agenda Guardada</title>
     </head>
     <body>
         <h1>App Scheduling</h1>
@@ -24,10 +25,9 @@
         agenda.setAgendaCode(request.getParameter("numberCodeAgenda"));
         agenda.setUserCode(request.getParameter("numberUserCode"));
         agenda.setAgendaDate(request.getParameter("dateAgenda"));
-        agenda.setAgendaDescription(request.getParameter("txtDescription"));
+        agenda.setAgendaDescription(request.getParameter("description"));
         json.toJson(agenda);
         agendaResource.postAgenda(agenda);
-        
         out.println("Los datos de la funcion se han guardado con exito");
     
     %>

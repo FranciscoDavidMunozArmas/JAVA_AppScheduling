@@ -2,10 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/src/java/ec/edu/espe/DB/DBConnection.java</file>
             <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/src/java/ec/edu/espe/Model/Appointment.java</file>
             <file>file:/C:/Users/panch/Desktop/University/Semester-V/Web/Partial%201/Proyecto_Parcial%201/AppSchedulingServer/web/saveAgenda.jsp</file>
         </group>
+=======
+        <group/>
+>>>>>>> 2c986824a363c4ac045c4e24227b0972187ae6a7
     </open-files>
 </project-private>

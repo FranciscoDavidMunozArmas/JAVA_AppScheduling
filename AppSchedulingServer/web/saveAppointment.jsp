@@ -13,6 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styleOfPage.css">
         <title>Appointment Save Information</title>
     </head>
     <body>
@@ -28,7 +29,7 @@
         appointment.setAgendaCode(request.getParameter("txtDayAppointment"));
         json.toJson(appointment);
         appointmentResource.postAgenda(appointment);
-        out.println("Los datos de la funcion se han guardado con exito");
+        out.println("Los datos de la funcion se han guardado con exito"+appointment.getAppointmentEndHour());
     
     %>
     </body>
