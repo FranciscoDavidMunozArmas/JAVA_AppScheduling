@@ -25,33 +25,44 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"> Crear agenda</a>
+                            <a class='btn btn-primary btn-block' href="createEmployee.jsp"> Crear Empleado</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver agenda</a>
+                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"> Crear Agenda</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear cita</a>
+                            <a class='btn btn-primary btn-block' href="createService.jsp">Crear Servicio</a>    
+                        </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver Agenda</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver citas</a>
+                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear Cita</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewEmployee.jsp">Ver empleados</a>
+                            <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver Cita</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewService.jsp">Ver servicios</a>    
+                            <a class='btn btn-primary btn-block' href="viewEmployee.jsp">Ver Empleado</a>
+
                         </div>
+                        <div class="m-2">
+                            <a class='btn btn-primary btn-block' href="viewService.jsp">Ver Servicios</a>    
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <div class="float-right-bottom">
+            <a href="createLogin.jsp" class="btn btn-primary btn-float" data-toggle="tooltip" data-placement="top" title="Log out"><span class="fa fa-power-off"></span></a>
+        </div>
     </body>
 </html>

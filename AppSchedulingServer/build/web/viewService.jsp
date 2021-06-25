@@ -68,5 +68,8 @@
                 </div>
             </div>
         </div>
+        <div class="float-right-bottom">
+            <a href="createLogin.jsp" class="btn btn-primary btn-float" data-toggle="tooltip" data-placement="top" title="Log out"><span class="fa fa-power-off"></span></a>
+        </div>
     </body>
 </html>

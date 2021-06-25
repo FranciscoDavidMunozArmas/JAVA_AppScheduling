@@ -72,6 +72,7 @@
 .form-group input[type="time"],
 .form-group input[type="date"],
 .form-group input[type="datetime"],
+.form-group input[type="password"],
 .form-group input[type="datetime-local"]{
     border: 1px solid transparent;
     border-radius: 0%;
@@ -84,6 +85,7 @@
 .form-group input[type="date"],
 .form-group input[type="datetime"],
 .form-group input[type="datetime-local"],
+.form-group input[type="password"],
 .form-group textarea,
 .form-group select{
     transition: all .3s ease;
@@ -125,4 +127,22 @@
 
 .btn-block{
     width: 100%;
+}
+
+.btn-float{
+    margin: 10px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0.1rem #000;
+    transition: all .3s ease;
+}
+
+.btn-float:hover{
+    border-radius: 100%;
+    box-shadow: 0px 0px 0.25rem #000;
+}
+
+.float-right-bottom{
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }

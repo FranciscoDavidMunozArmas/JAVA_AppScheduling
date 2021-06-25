@@ -48,13 +48,13 @@ public class EmployeeResource {
         return employeeController.getAllEmployee();
     }
     
-    /*@POST
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Employee postEmployee(@PathParam("employee")Employee employee) {
+    public Employee postEmployee(Employee employee) {
         EmployeeController employeeController = new EmployeeController();
         return employeeController.postEmployee(employee);
-    }*/
+    }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)

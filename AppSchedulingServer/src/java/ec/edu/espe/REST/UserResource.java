@@ -49,7 +49,6 @@ public class UserResource {
     }
     
     @POST
-    //@Path("/{content}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public User postUser(User content) {
