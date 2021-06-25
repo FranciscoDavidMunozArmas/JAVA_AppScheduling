@@ -24,6 +24,8 @@ public class DBConnection {
     private final String SQL_PASSWORD = "12345";
     //Bryan
     //private final String SQL_PASSWORD = "bajd1726";
+    //Steven
+    //private final String SQL_PASSWORD = "steven03";
     
     public Connection getDBConnection(){
         Connection conn = null;
