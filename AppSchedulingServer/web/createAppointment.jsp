@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Create Agenda</title>
+        <title>Crear cita</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     <body>
         <div class=" wrapper bg-gradient-primary">
             <div class="d-flex justify-content-center">
-                <h1>Crear Cita</h1>
+                <h1>Crear cita</h1>
             </div>
             <div class="container d-flex justify-content-center" >
                 <div class="card">
@@ -30,22 +30,22 @@
                         </div>
                         <form action="saveAppointment.jsp" method="POST" class="form-container" >
                             <div class="form-group">
-                                <label for="numberCodeAppointment">Codigo Cita</label>
-                                <input class="form-control" placeholder="Codigo" type="number" name="numberCodeAppointment" onkeypress="return validekey(event)" >
+                                <label for="numberCodeAppointment">Código de cita</label>
+                                <input class="form-control" placeholder="Código cita" type="number" name="numberCodeAppointment" onkeypress="return validekey(event)" >
                             </div>
                             <div class="form-group">
-                                <label for="numberAgendaCode">Codigo Agenda</label>
-                                <input class="form-control" placeholder="Codigo Agenda" type="number" name="numberAgendaCode" onkeypress="return validekey(event)" >
+                                <label for="numberAgendaCode">Código de agenda</label>
+                                <input class="form-control" placeholder="Codigo agenda" type="number" name="numberAgendaCode" onkeypress="return validekey(event)" >
                             </div>
                             <div class="form-group">
-                                <label for="timeStartHour">Hora inicio</label>
+                                <label for="timeStartHour">Hora de inicio</label>
                                 <input class="form-control" type="time" name="timeStartHour">
                             </div>
                             <div class="form-group">
-                                <label for="timeEndHour">Hora inicio</label>
+                                <label for="timeEndHour">Hora de finalización</label>
                                 <input class="form-control" type="time" name="timeEndHour" >
                             </div>
-                            <input class="btn btn-primary btn-block" type="submit" value="Save"/>
+                            <input class="btn btn-primary btn-block" type="submit" value="Guardar"/>
                         </form>
                     </div>
                 </div>

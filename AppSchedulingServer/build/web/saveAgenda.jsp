@@ -16,12 +16,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="style.css">
-        <title>Agenda Guardada</title>
+        <title>Agenda guardada</title>
     </head>
     <body>
         <div class=" wrapper bg-gradient-primary">
             <div class="d-flex justify-content-center">
-                <h1>Datos Guardados con exito</h1>
+                <h1>Datos guardados</h1>
             </div>
             <div class="container d-flex justify-content-center" >
                 <div class="card">

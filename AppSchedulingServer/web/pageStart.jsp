@@ -25,27 +25,27 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"> Crear Agenda</a>
+                            <a class='btn btn-primary btn-block' href="createAgenda.jsp"> Crear agenda</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver Agenda</a>
+                            <a class='btn btn-primary btn-block' href="viewAgenda.jsp"> Ver agenda</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear Cita</a>
+                            <a class='btn btn-primary btn-block' href="createAppointment.jsp"> Crear cita</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver Cita</a>
+                            <a class='btn btn-primary btn-block' href="viewAppointment.jsp">Ver citas</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewEmployee.jsp">Ver Empleado</a>
+                            <a class='btn btn-primary btn-block' href="viewEmployee.jsp">Ver empleados</a>
 
                         </div>
                         <div class="m-2">
-                            <a class='btn btn-primary btn-block' href="viewService.jsp">Ver Servicios</a>    
+                            <a class='btn btn-primary btn-block' href="viewService.jsp">Ver servicios</a>    
                         </div>
                     </div>
                 </div>
