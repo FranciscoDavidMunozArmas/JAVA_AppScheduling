@@ -113,3 +113,27 @@ alter table SERVICEEMPLOYEE add constraint FK_SERVICEEMPLOYEE foreign key (SERVI
 alter table SERVICEEMPLOYEE add constraint FK_SERVICEEMPLOYEE2 foreign key (EMPLOYEECODE)
       references EMPLOYEE (EMPLOYEECODE) on delete restrict on update restrict;
 
+
+/*==============================================================*/
+/* Insercion                                                    */
+/*==============================================================*/
+insert into USER values('1751990332', 'David', 'Hello_12345');
+insert into USER values('1751990334', 'Elian', 'Hello_12345');
+
+insert into EMPLOYEE values('1751990332', 'Bryan');
+insert into EMPLOYEE values('1751990334', 'Steven');
+
+insert into SERVICE values('ABDC1234', 'Software Develop', 'Tell us your ideas');
+insert into SERVICE values('DEFG5678', 'Marketing', 'We help you will the marketing of your enterprise');
+
+insert into AGENDA values('ABDC1234', '1751990332', '2000-06-10 10:30:00', 'Agenda 1');
+insert into AGENDA values('DEFG5678', '1751990334', '2000-06-10 10:30:00', 'Agenda 1');
+
+insert into APPOINTMENT values('ABDC1234', 'DEFG5678', '10:30:00', '13:30:00', 'L-M-X-J-V');
+insert into APPOINTMENT values('DEFG5678', 'ABDC1234', '10:30:00', '13:30:00', 'S-D');
+
+insert into SERVICEEMPLOYEE values('ABDC1234', '1751990334');
+insert into SERVICEEMPLOYEE values('DEFG5678', '1751990332');
+
+insert into APPOINTMENTSERVICE values('ABDC1234', 'DEFG5678');
+insert into APPOINTMENTSERVICE values('DEFG5678', 'ABDC1234');
