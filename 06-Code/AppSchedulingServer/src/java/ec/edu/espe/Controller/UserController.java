@@ -58,10 +58,13 @@ public class UserController {
             conn = dbConnection.getDBConnection();
             statement = conn.createStatement();
             
-            String sql = "select * from user where usercode = '" + userCode + "'";
+            String sql = "select * from user where usercode= '" + userCode + "'";
+            System.out.println(sql);
             ResultSet res = statement.executeQuery(sql);
             
-            user = new User(res.getString("USERCODE"),res.getString("USERNAME"),res.getString("USERPASSWORD"));
+            while((res != null) && (res.next())){
+                user = new User(res.getString("USERCODE"),res.getString("USERNAME"),res.getString("USERPASSWORD"));
+            }
             
         }catch(SQLException ex){
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
