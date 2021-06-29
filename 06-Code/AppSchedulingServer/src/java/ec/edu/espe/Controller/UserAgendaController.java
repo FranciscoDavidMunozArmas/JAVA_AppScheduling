@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.Controller;
-import ec.edu.espe.DB.DBConnection;
+import ec.edu.espe.Config.DBConnection;
 import ec.edu.espe.Model.User;
 import ec.edu.espe.Model.Agenda;
 import java.sql.Connection;

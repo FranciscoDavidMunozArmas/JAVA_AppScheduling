@@ -6,7 +6,7 @@
  */
 package ec.edu.espe.Controller;
 
-import ec.edu.espe.DB.DBConnection;
+import ec.edu.espe.Config.DBConnection;
 import ec.edu.espe.Model.ServiceEmployee;
 import java.sql.Connection;
 import java.sql.ResultSet;
